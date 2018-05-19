@@ -15,7 +15,7 @@ services:
       - net-php
 
   php:
-    build: ./php/php56/
+    build: ./php/php72/
     container_name: dnmp-php
     expose:
       - "9000"
@@ -30,7 +30,7 @@ services:
       - net-redis
 
   mysql:
-    image: mysql:5.7
+    image: mysql:latest
     container_name: dnmp-mysql
     ports:
       - "3306:3306"
